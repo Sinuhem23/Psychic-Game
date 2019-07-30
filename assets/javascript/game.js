@@ -27,22 +27,28 @@ document.onkeyup = function(event) {
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
     // Outcome of game and increments
-    if ((userGuess === "a") || (userGuess === "h") || (userGuess === "o") || (userGuess === "u") 
+    
+  if ((userGuess === "a") || (userGuess === "h") || (userGuess === "o") || (userGuess === "u") 
     || (userGuess === "b") || (userGuess === "i") || (userGuess === "p") || (userGuess === "v") 
     || (userGuess === "c") || (userGuess === "j") || (userGuess === "q") || (userGuess === "w") 
     || (userGuess === "d") || (userGuess === "k") || (userGuess === "r") || (userGuess === "x") 
     || (userGuess === "e") || (userGuess === "l") || (userGuess === "s") || (userGuess === "y") 
     || (userGuess === "f") || (userGuess === "m") || (userGuess === "t") || (userGuess === "z") 
     || (userGuess === "g") || (userGuess === "n")) {
+     
 
-        if (userGuess === computerGuess) {
+     if (userGuess === computerGuess) {
             wins++;
-        } else {
-            losses++
+        } else if (guessleft) {
             guessleft--;
-            
+        } else {
+            losses++;
         }
+        
 
+   
+
+        
         // Hide the directions
         directionsText.textContent = "";
 
@@ -53,7 +59,8 @@ document.onkeyup = function(event) {
         userChoiceText.textContent = "Your Guesses So Far: " + userGuess;
         computerChoiceText.textContent = "The computer chose: " + computerGuess;
        
-    }
+     }
+   
 };
 
 
