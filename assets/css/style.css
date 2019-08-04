@@ -1,3 +1,14 @@
+/* Affects all */
+body {
+    background-color: rgb(77, 116, 180);
+    text-align: center;
+    
+}
+
+
+
+/* Individual IDs */
+
 #userchoice-text {
 color: rgb(102, 0, 128)
 
@@ -25,11 +36,8 @@ color: rgb(255, 38, 0);
 color: rgb(255, 123, 0);
 
 }
-body {
-    background-color: rgb(77, 116, 180);
-    text-align: center;
-    
-}
+
+
 
 #directions-text {
     font-size: 33px;
@@ -46,4 +54,8 @@ body {
     font-size: 29px;
     margin-top: 200px;
     display: solid black;
+}
+
+#GuessWhatLetterimThinkingOf {
+    padding-bottom: 30px;
 }

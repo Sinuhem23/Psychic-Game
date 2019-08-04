@@ -8,7 +8,7 @@ var losses = 0;
 var guessleft = 9;
 var yourguessessofar = [];
 
-
+var GuessThinkingletter = [];
 
 // variables references to HTML
 var directionsText = document.getElementById("directions-text");
@@ -17,16 +17,17 @@ var computerChoiceText = document.getElementById("computerchoice-text");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var guessleftText = document.getElementById("guessesleft-text");
-var yourguessessofarText = document.getElementById('yourguessessofar-text');
-
+var yourguessessofarText = document.getElementById("yourguessessofar-text");
+var GuessWhatLetterimThinkingOfText = document.getElementById("GuessWhatLetterimThinkingOf");
 
 
 // Function to Run
 document.onkeyup = function(event) {
-
+ 
     // Determines which key was pressed.
     var userGuess = event.key;
    
+    
     // Random computer guess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
@@ -81,10 +82,11 @@ document.onkeyup = function(event) {
         directionsText.textContent = "";
 
         // Display game
+        GuessWhatLetterimThinkingOfText.textContent = "Guess what letter I'm thinking of";
         winsText.textContent = "Wins: " + wins;
         lossesText.textContent = "Losses: " + losses;
         guessleftText.textContent = "Guesses Left: " + guessleft;
-        userChoiceText.textContent = "Your Guesses So Far: " + userGuess;
+        userChoiceText.textContent = "Your Guesses so far: " + userGuess;
         computerChoiceText.textContent = "The computer chose: " + computerGuess;
        
      }
