@@ -6,7 +6,7 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 var wins = 0;
 var losses = 0;
 var guessleft = 9;
-var yourguessessofar = ("userchoice-text");
+var yourguessessofar = [];
 
 
 
@@ -26,7 +26,7 @@ document.onkeyup = function(event) {
 
     // Determines which key was pressed.
     var userGuess = event.key;
-
+   
     // Random computer guess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
@@ -47,9 +47,10 @@ document.onkeyup = function(event) {
      
 
      if (userGuess === computerGuess) {
-            wins++;
+            wins++; 
         } else if (guessleft) {
             guessleft--; 
+          
             
 
             

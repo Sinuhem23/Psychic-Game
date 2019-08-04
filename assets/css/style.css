@@ -1,0 +1,49 @@
+#userchoice-text {
+color: rgb(102, 0, 128)
+
+}
+
+#computerchoice-text {
+    color: rgb(0, 180, 69)
+}
+
+
+
+
+
+#wins-text {
+color: rgb(0, 132, 255);
+
+}
+
+#losses-text {
+color: rgb(255, 38, 0);
+
+}
+
+#guessesleft-text {
+color: rgb(255, 123, 0);
+
+}
+body {
+    background-color: rgb(77, 116, 180);
+    text-align: center;
+    
+}
+
+#directions-text {
+    font-size: 33px;
+
+}
+
+.mods {
+    background-color: white;
+    border: solid rgb(0, 0, 0);
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 29px;
+    margin-top: 200px;
+    display: solid black;
+}
