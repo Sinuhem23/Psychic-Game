@@ -62,7 +62,7 @@ document.onkeyup = function(event) {
             
                 guessleft = 9;
                 yourguessessofar = [];
-                wins++;
+                wins;
                 losses++;
                 start();
               }
@@ -89,5 +89,3 @@ document.onkeyup = function(event) {
      }
    
 };
-
-
