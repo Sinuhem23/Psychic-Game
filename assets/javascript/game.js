@@ -2,11 +2,13 @@
 // Array of options 
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-// Variables to hold the number of wins, losses, guess left and guesses so far
+// Variables to hold the number of wins, losses, guesses left and guesses so far
 var wins = 0;
 var losses = 0;
 var guessleft = 9;
-var yourguessessofar = event;
+var yourguessessofar = ("userchoice-text");
+
+
 
 // variables references to HTML
 var directionsText = document.getElementById("directions-text");
@@ -17,6 +19,8 @@ var lossesText = document.getElementById("losses-text");
 var guessleftText = document.getElementById("guessesleft-text");
 var yourguessessofarText = document.getElementById('yourguessessofar-text');
 
+
+
 // Function to Run
 document.onkeyup = function(event) {
 
@@ -26,8 +30,13 @@ document.onkeyup = function(event) {
     // Random computer guess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    // Outcome of game and increments
     
+    
+    
+    
+    // Outcome of game and increments
+ 
+
   if ((userGuess === "a") || (userGuess === "h") || (userGuess === "o") || (userGuess === "u") 
     || (userGuess === "b") || (userGuess === "i") || (userGuess === "p") || (userGuess === "v") 
     || (userGuess === "c") || (userGuess === "j") || (userGuess === "q") || (userGuess === "w") 
@@ -40,14 +49,32 @@ document.onkeyup = function(event) {
      if (userGuess === computerGuess) {
             wins++;
         } else if (guessleft) {
-            guessleft--;
+            guessleft--; 
+            
+
+            
+            
+
         } else {
-            losses++;
-        }
-        
+                
+            
+          
+            
+                guessleft = 9;
+                yourguessessofar = [];
+                wins++;
+                losses++;
+                start();
+              }
+            
+    
+         
+           
+               
+       
 
-   
-
+         
+            
         
         // Hide the directions
         directionsText.textContent = "";
