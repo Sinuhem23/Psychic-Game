@@ -8,7 +8,7 @@ var losses = 0;
 var guessleft = 9;
 var yourguessessofar = [];
 
-var GuessThinkingletter = [];
+ 
 
 // variables references to HTML
 var directionsText = document.getElementById("directions-text");
@@ -23,6 +23,7 @@ var GuessWhatLetterimThinkingOfText = document.getElementById("GuessWhatLetterim
 
 // Function to Run
 document.onkeyup = function(event) {
+	
  
     // Determines which key was pressed.
     var userGuess = event.key;
