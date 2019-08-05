@@ -26,12 +26,16 @@ document.onkeyup = function(event) {
  
     // Determines which key was pressed.
     var userGuess = event.key;
+
    
-    
+    console.log(userGuess);
     // Random computer guess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
+    console.log(computerGuess);
+
     
+	
     
     
     
@@ -49,28 +53,30 @@ document.onkeyup = function(event) {
 
      if (userGuess === computerGuess) {
             wins++; 
+            console.log(wins);
+            
         } else if (guessleft) {
             guessleft--; 
           
             
-
+            
             
             
 
         } else {
                 
-            
           
+              
             
                 guessleft = 9;
                 yourguessessofar = [];
                 wins;
                 losses++;
-                start();
+                
               }
             
     
-         
+         console.log(losses);
            
                
        
