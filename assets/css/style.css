@@ -1,21 +1,36 @@
 /* Affects all */
-body {
+html {
     background-color: rgb(77, 116, 180);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     
 }
+
+.bodyMod {
+    background-color: rgb(77, 116, 180);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    
+    
+    }
+  
+    
+    
+
 
 
 
 /* Individual IDs */
 
 #userchoice-text {
-color: rgb(102, 0, 128)
+color: rgb(102, 0, 128);
 
 }
 
 #computerchoice-text {
-    color: rgb(0, 180, 69)
+    color: rgb(0, 180, 69);
 }
 
 
@@ -47,12 +62,12 @@ color: rgb(255, 123, 0);
 .mods {
     background-color: white;
     border: solid rgb(0, 0, 0);
-    margin-left: 500px;
-    margin-right: 500px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin-left: 33%;
+    margin-right: 33%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     font-size: 29px;
-    margin-top: 200px;
+    margin-top: 10%;
     display: solid black;
 }
 
